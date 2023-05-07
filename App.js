@@ -2,17 +2,22 @@ import { StyleSheet, Text, View, SafeAreaView, StatusBar, ScrollView } from 'rea
 import React from 'react'
 import FlatCards from './components/FlatCards'
 import ScrollableCards from './components/ScrollableCards'
+import FancyCard from './components/FancyCard'
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <View>
-          <FlatCards />
-          <ScrollableCards />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <>
+      <StatusBar />
+      <SafeAreaView>
+        <ScrollView showsVerticalScrollIndicator={false} >
+          <View>
+            <FlatCards />
+            <ScrollableCards />
+            <FancyCard />
+          </View>
+        </ScrollView>
+      </SafeAreaView>
+    </>
   )
 }
 
