@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
     cardImage: {
         height: 280,
         borderTopLeftRadius: 6,
-        borderTopRightRadius: 6
+        borderTopRightRadius: 6,
+        resizeMode: 'cover'
     },
     cardBody: {},
     cardTitle: {
